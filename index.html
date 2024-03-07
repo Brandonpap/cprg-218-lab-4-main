@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="/styles/fonts.css">
+  <link rel="stylesheet" type="text/css" href="/styles/global.css">
+  <link rel="stylesheet" type="text/css" href="styles/lab_four_starter.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+  <title>Art of Calgary</title>
+
+</head>
+<body>
+  
+   <section class="hero-banner">
+    <div class="hero-banner">
+      <h1>Art of Calgary</h1>
+      <p>An outline of some of the best artwork in Calgary</p>.</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="container">
+      <h2>Street Art </h2>
+      <p>Street art adds a  vibrancy into a city, turning blank walls into a captivating canvas. It reflects the community's identity, adding depth and character to urban spaces.</p>
+      <img src="styles/Assets/Calgary art.jpeg" alt="Placeholder Image">
+      <p>Beyond aesthetics, it fosters creativity and cultural expression, enriching the city's beauty and engaging its citizens.</p>
+      <button>Learn More</button>
+    </div>
+  </section>
+
+  <section class="accordion">
+    <h3>Calgary's Art Galleries</h3>
+  <div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-heading">Illingworth Kerr Gallery</div>
+      <div class="accordion-content">
+        <p>The IKG is a world-class exhibition space and flexible platform for critical enquiry and theoretical debate with a focus on visual culture.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-heading">Wallace Galleries Ltd </div>
+      <div class="accordion-content">
+        <p>Ranging from Realism to Abstraction; we carry some of Canada's leading artists, along with some up-and-coming stars.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-heading">Glenbow Museum</div>
+      <div class="accordion-content">
+        <p>Art & area history museum with a permanent collection & archives, plus visiting exhibits & events.</p>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const accordionItems = document.querySelectorAll(".accordion-item");
+  
+      accordionItems.forEach(item => {
+        item.addEventListener("click", function() {
+        
+          this.querySelector(".accordion-content").classList.toggle("active");
+        });
+      });
+    });
+  </script>
+</section>
+
+  <section class="footer">
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Calgary's Art Division. All rights reserved.</p>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40120.34886776238!2d-114.1540764882942!3d51.06191697144167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716f938a693a21%3A0x105de31f34d211bc!2sIllingworth%20Kerr%20Gallery!5e0!3m2!1sen!2sca!4v1709844600003!5m2!1sen!2sca" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+    
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    </section>
+
+</body>
+</html>
